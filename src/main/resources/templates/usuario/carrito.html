@@ -59,7 +59,7 @@
                             <td th:text="${dorden.getPrecio()}"></td>
                             <td th:text="${dorden.getCantidad()}"></td>
                             <td th:text="${dorden.getTotal()}"></td>
-                            <td><a href="#" class="btn btn-danger">Quitar</a></td>
+                            <td><a th:href="@{/cart/delete/{id} (id=${dorden.producto.getId()})}" class="btn btn-danger">Quitar</a></td>
                         </tr>
                         </tbody>
                     </table>
